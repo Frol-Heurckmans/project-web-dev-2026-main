@@ -1,0 +1,39 @@
+/* Subtle money-simulator themed background */
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	/* a calm, desaturated green gradient (not too bright) */
+	background: linear-gradient(180deg, #e9f6ec 0%, #dff1e3 40%, #cfe9d0 100%);
+	color: #0b2e1a; /* deep green for text */
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Optional: container to center page content */
+.page-wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Small accent for cards/buttons to match theme */
+.card, button {
+	background-color: rgba(255,255,255,0.9);
+	border: 1px solid rgba(11,46,26,0.08);
+	border-radius: 8px;
+	color: inherit;
+}
+
+/* Ensure links are readable */
+a {
+	color: #0b6b3a;
+}
+
+/* Darker footer variant */
+footer {
+	background: rgba(11,46,26,0.04);
+}
