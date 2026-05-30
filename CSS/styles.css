@@ -1,9 +1,12 @@
 body {
-    background-color: lightgreen;
+    background-color: rgb(111, 141, 111);
 }
 h1 {
     text-align:center;
 }
 p {
+    text-align:center;
+}
+a {
     text-align:center;
 }
