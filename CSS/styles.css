@@ -21,15 +21,14 @@ img {
     width: 50%;
 }
 
-.Button_1, .Button_2 {
-  position: fixed;
-  bottom: 20px;
-}
-
 .Button_1 {
-  left: calc(50% - 90px);
+  position: absolute;
+  top: 500px;
+  left: 35%;
 }
 
 .Button_2 {
-  left: calc(50% + 10px);
+  position: absolute;
+  top: 500px;
+  left: 65%;
 }
