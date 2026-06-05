@@ -22,7 +22,7 @@ img {
 }
 
 button {
-    position: absolute;
+    display: block;
     top: 500px;
     left: 35%;
 }
