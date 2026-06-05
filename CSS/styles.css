@@ -22,13 +22,13 @@ img {
 }
 
 .button_1{
-    position: absolute;
-    top: 500px;
-    left: 35%;
+    margin-top: 20px;
+    margin-left: 35%;
+    display: block;
 }
 
 .button_2{
-    position: absolute;
-    top: 500px;
-    left: 65%;
+    margin-top: 20px;
+    margin-left: 65%;
+    display: block;
 }
