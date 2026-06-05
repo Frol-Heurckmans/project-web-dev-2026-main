@@ -22,13 +22,11 @@ img {
 }
 
 .button_1{
+    text-align: center;
     margin-top: 20px;
-    margin-left: 35%;
-    display: block;
 }
 
 .button_2{
+    text-align: center;
     margin-top: 20px;
-    margin-right: 35%;
-    display: block;
 }
