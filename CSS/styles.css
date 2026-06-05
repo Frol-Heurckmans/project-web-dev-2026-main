@@ -21,8 +21,14 @@ img {
     width: 50%;
 }
 
-button {
+.button_1{
     position: absolute;
     top: 500px;
     left: 35%;
+}
+
+.button_2{
+    position: absolute;
+    top: 500px;
+    left: 65%;
 }
