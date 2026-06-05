@@ -23,7 +23,7 @@ img {
 
 .Button_1, .Button_2 {
   position: fixed;
-  bottom: 20px;
+  top: 500px;
 }
 
 .Button_1 {
