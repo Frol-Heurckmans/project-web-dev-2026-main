@@ -3,5 +3,5 @@ function goToGame() {
 }
 
 function goToInfo() {
-    window.Location.href = "HTML/info.html";
+    window.Location.href = "HTML/infopage.html";
 }
