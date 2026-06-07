@@ -18,7 +18,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 25%;
 }
 
 .buttonContainer {
@@ -29,6 +29,6 @@ img {
 
 .menubutton {
     width: 200px;
-    height: 50px;
+    height: 100px;
 }
 
