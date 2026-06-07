@@ -1,7 +1,7 @@
 function goToGame() {
-    window.Location.href = "HTML/game.html";
+    window.location.href = "HTML/game.html";
 }
 
 function goToInfo() {
-    window.Location.href = "HTML/infopage.html";
+    window.location.href = "HTML/infopage.html";
 }
