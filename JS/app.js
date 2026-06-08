@@ -1,3 +1,7 @@
+
+// JavaScript code voor de clicker game.
+//Functies aanmaken voor knoppen.
+
 function goToGame() {
     window.location.href = "HTML/game.html";
 }
