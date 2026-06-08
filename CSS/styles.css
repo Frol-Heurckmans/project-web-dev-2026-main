@@ -42,7 +42,13 @@ img {
 .menuButton {
     width: 75px;
     height: 30px;
-    font-size: 14px;
+    font-size: 12px;
+}
+
+.backContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .backButton {
@@ -50,6 +56,6 @@ img {
     align-items: center;
     width: 75px;
     height: 30px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
