@@ -42,6 +42,7 @@ img {
 .menuButton {
     width: 75px;
     height: 30px;
+    font-size: 14px;
 }
 
 .backButton {
@@ -49,5 +50,6 @@ img {
     justify-content: center;
     width: 75px;
     height: 30px;
+    font-size: 14px;
 }
 
