@@ -20,3 +20,7 @@ function goToInfo() {
 function GoBack() {
     window.location.href = "../index.html";
 }
+
+const username = localStorage.getItem("username");
+
+document.getElementById("playerInfo").textContent = "Playing as: " + username;
