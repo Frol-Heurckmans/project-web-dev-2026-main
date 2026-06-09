@@ -13,12 +13,15 @@
 
         <h2>Start clicking when you're ready!</h2>
 
-        <div class="theButton">
+        <div class="theButtonContainer">
             <p id="coinCount">Coins: 0</p>
             <button class="clickButton" onclick="clickButton()">Click me!</button>
         </div>
 
-        <button class="upgradeButton" onclick="upgrade()">Upgrade (Cost: 100 coins)</button>
+        <div class="upgradeContainer">
+            <button class="upgradeButton" onclick="buyUpgrade()">Upgrade (Cost: 50 coins)</button>
+            <button class="ultraUpgradeButton" onclick="buyUltraUpgrade()">Ultra Upgrade (Cost: 500 coins)</button>
+        </div>
 
         <div class="backContainer">
             <button class="backButton" onclick="GoBack()">Back</button>

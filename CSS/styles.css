@@ -79,7 +79,7 @@ img {
     color: white;
 }
 
-.theButton {
+.theButtonContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +98,14 @@ img {
     color: rgb(192, 172, 22)
 }
 
-.upgradeButton {
+.upgradeContainer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.upgradeButton, .ultraUpgradeButton {
     width: 100px;
     height: 40px;
     font-size: 14px;
