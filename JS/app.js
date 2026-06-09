@@ -3,7 +3,7 @@
 //Functies aanmaken voor knoppen.
 
 let coinsPerClick = 1;
-let upgradeCost = 100;
+let upgradeCost = 50;
 
 function goToGame() {
     let username = document.getElementById("username").value.trim();
