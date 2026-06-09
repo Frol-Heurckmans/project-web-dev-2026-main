@@ -3,6 +3,13 @@
 //Functies aanmaken voor knoppen.
 
 function goToGame() {
+    let username = document.getElementById("username").value.trim();
+    if (username === "") {
+        username = "Guest";
+    }
+
+    localStorage.setItem("username", username);
+    
     window.location.href = "HTML/game.html";
 }
 
