@@ -9,7 +9,7 @@ function goToGame() {
     }
 
     localStorage.setItem("username", username);
-    
+
     window.location.href = "HTML/game.html";
 }
 
