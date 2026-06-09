@@ -47,13 +47,13 @@ img {
 
 .backContainer {
     position: fixed;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 20px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .backButton {
-    position: fixed;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 75px;
