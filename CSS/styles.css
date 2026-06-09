@@ -46,14 +46,14 @@ img {
 }
 
 .backContainer {
-    display: flex;
+    position: fixed;
     justify-content: center;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .backButton {
-    display: flex;
+    position: fixed;
     justify-content: center;
     align-items: center;
     width: 75px;
