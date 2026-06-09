@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html> 
     <head> 
+        <!--Bestanden linken-->
         <meta charset="UTF-8">
         <link rel="stylesheet" href="../CSS/styles.css">
         <script src="../JS/app.js" defer></script>
@@ -11,6 +12,11 @@
         <p id="playerInfo"></p>
 
         <h2>Start clicking when you're ready!</h2>
+
+        <div class="theButton">
+            <button id="clickButton" onclick="clickButton()">Click me!</button>
+            <p id="coinCount">Coins: 0</p>
+        </div>
 
         <div class="backContainer">
             <button class="backButton" onclick="GoBack()">Back</button>
