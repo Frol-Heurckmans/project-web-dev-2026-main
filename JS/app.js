@@ -21,6 +21,13 @@ function GoBack() {
     window.location.href = "../index.html";
 }
 
+function clickButton() {
+    let coinCountElement = document.getElementById("coinCount");
+    let currentCoins = parseInt(coinCountElement.textContent.split(": ")[1]);
+    currentCoins++;
+    coinCountElement.textContent = "Coins: " + currentCoins;
+}
+
 const username = localStorage.getItem("username");
 
 document.getElementById("playerInfo").textContent = "Playing as: " + username;
