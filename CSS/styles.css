@@ -92,3 +92,8 @@ img {
     height: 75px;
     font-size: 18px;
 }
+
+#coinCount {
+    font-size: 20px;
+    color: rgb(192, 172, 22)
+}
