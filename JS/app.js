@@ -37,9 +37,9 @@ function buyUpgrade() {
     if (currentCoins >= upgradeCost) {
         currentCoins -= upgradeCost;
         coinsPerClick++;
-        upgradeCost = Math.ceil(upgradeCost * 1.5);
+        upgradeCost = Math.ceil(upgradeCost * 1.15);
         coinCountElement.textContent = "Coins: " + currentCoins;
-        document.getElementById("upgradeCost").textContent = "Upgrade Cost: " + upgradeCost;
+        document.getElementById("upgradeButton").textContent = "Upgrade (Cost: " + upgradeCost + " coins)";
     }
 }
 document.getElementById("upgradeButton").textContent = "Upgrade (Cost: " + upgradeCost + " coins)";
