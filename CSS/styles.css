@@ -2,6 +2,7 @@ body {
     background-color: rgb(111, 141, 111);
 }
 
+/*Meeste tekst centreren, behalve de info tekst.*/
 h1 {
     text-align:center;
 }
@@ -33,6 +34,7 @@ img {
     width: 25%;
 }
 
+/*Menu en knoppen stylen.*/
 .menuContainer {
     display: flex;
     flex-direction: column;
