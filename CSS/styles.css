@@ -135,6 +135,7 @@ img {
     margin-top: 40px;
     padding: 10px;
     text-align: center;
+    justify-content: center;
 }
 
 /*Responsive designs voor andere apparaten.*/
