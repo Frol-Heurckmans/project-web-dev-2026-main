@@ -134,8 +134,18 @@ img {
 .gameFooter {
     margin-top: 40px;
     padding: 10px;
-    text-align: center;
+    display: flex;
     justify-content: center;
+}
+
+.gameFooter table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.gameFooter th, .gameFooter td {
+    border: 1px solid black;
+    padding: 8px 12px;
 }
 
 /*Responsive designs voor andere apparaten.*/
