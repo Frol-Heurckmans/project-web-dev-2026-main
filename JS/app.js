@@ -1,10 +1,15 @@
 
 // JavaScript code voor de clicker game.
-//Functies aanmaken voor knoppen.
 
+// Variabelen aanmaken voor de game.
+
+let currentCoins = 0;
 let coinsPerClick = 1;
 let upgradeCost = 50;
+let username = localStorage.getItem("username");
 let ultraUpgradeCost = 1000;
+
+//Functies aanmaken voor knoppen.
 
 function goToGame() {
     let username = document.getElementById("username").value.trim();
@@ -26,23 +31,23 @@ function GoBack() {
 }
 
 function clickButton() {
-    let coinCountElement = document.getElementById("coinCount");
-    let currentCoins = parseInt(coinCountElement.textContent.split(": ")[1]);
-    currentCoins += coinsPerClick;
-    coinCountElement.textContent = "Coins: " + currentCoins;
+   currentCoins += coinsPerClick;
+   document.getElementById("coinCount").textContent = 
+        "Coins: " + currentCoins;
 }
 
 function buyUpgrade() {
-    let coinCountElement = document.getElementById("coinCount");
-    let currentCoins = parseInt(coinCountElement.textContent.split(": ")[1]);
     if (currentCoins >= upgradeCost) {
         currentCoins -= upgradeCost;
         coinsPerClick++;
-        upgradeCost = Math.ceil(upgradeCost * 1.15);
-        coinCountElement.textContent = "Coins: " + currentCoins;
-        document.getElementById("upgradeButton").textContent = "Upgrade (Cost: " + upgradeCost + " coins)";
+        upgardeCost = Math.ceil(upgradeCost * 1.15);
+        document.getElementById("coinCount").textContent =
+            "Coins: " + currentCoins;
+        document.getElementById("upgradeButton").textContent = 
+            "Upgrade (Cost: " + upgradeCost + " coins)";
     }
 }
+
 document.getElementById("upgradeButton").textContent = "Upgrade (Cost: " + upgradeCost + " coins)";
 
 const username = localStorage.getItem("username");
