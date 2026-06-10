@@ -112,3 +112,71 @@ img {
     height: 50px;
     font-size: 11px;
 }
+
+/*Responsive designs voor andere apparaten.*/
+
+/*mobiel*/
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #coinCount {
+        font-size: 20px;
+    }
+
+    .menuButton {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    #coinCount {
+        font-size: 24px;
+    }
+
+    .menuButton {
+        width: 45%;
+        font-size: 18px;
+    }
+
+    .buttonContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    #coinCount {
+        font-size: 30px;
+    }
+
+    .menuButton {
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .buttonContainer {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }   
+}
