@@ -12,12 +12,12 @@ let ultraUpgradeCost = 1000;
 //Functies aanmaken voor knoppen.
 
 function goToGame() {
-    let username = document.getElementById("username").value.trim();
-    if (username === "") {
-        username = "Guest";
+    let inputName = document.getElementById("username").value.trim();
+    if (inputName === "") {
+        inputName = "Guest";
     }
 
-    localStorage.setItem("username", username);
+    localStorage.setItem("username", inputName);
 
     window.location.href = "HTML/game.html";
 }
@@ -34,6 +34,7 @@ function clickButton() {
    currentCoins += coinsPerClick;
    document.getElementById("coinCount").textContent = 
         "Coins: " + currentCoins;
+    saveGame();
 }
 
 function buyUpgrade() {
@@ -45,6 +46,7 @@ function buyUpgrade() {
             "Coins: " + currentCoins;
         document.getElementById("upgradeButton").textContent = 
             "Upgrade (Cost: " + upgradeCost + " coins)";
+        saveGame();
     }
 }
 
@@ -55,3 +57,9 @@ if (upgradeButton) {
         "Upgrade (Cost: " + upgradeCost + " coins)";
 }
 document.getElementById("playerInfo").textContent = "Playing as: " + username;
+
+function saveGame() {
+    localStorage.setItem(username + "_coins", currentCoins);
+    localStorage.setItem(username + "_coinsPerClick", coinsPerClick);
+    localStorage.setItem(username + "_upgradeCost", upgradeCost);
+}
