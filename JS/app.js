@@ -40,7 +40,7 @@ function buyUpgrade() {
     if (currentCoins >= upgradeCost) {
         currentCoins -= upgradeCost;
         coinsPerClick++;
-        upgardeCost = Math.ceil(upgradeCost * 1.15);
+        upgradeCost = Math.ceil(upgradeCost * 1.15);
         document.getElementById("coinCount").textContent =
             "Coins: " + currentCoins;
         document.getElementById("upgradeButton").textContent = 
@@ -49,7 +49,5 @@ function buyUpgrade() {
 }
 
 document.getElementById("upgradeButton").textContent = "Upgrade (Cost: " + upgradeCost + " coins)";
-
-const username = localStorage.getItem("username");
 
 document.getElementById("playerInfo").textContent = "Playing as: " + username;
