@@ -3,9 +3,10 @@
 
 // Variabelen aanmaken voor de game.
 
-let currentCoins = 0;
-let coinsPerClick = 1;
-let upgradeCost = 50;
+let username = localStorage.getItem("username") || "Guest";
+let currentCoins = parseInt(localStorage.getItem(username + "_coins")) || 0;
+let coinsPerClick = parseInt(localStorage.getItem(username + "_coinsPerClick")) || 1;
+let upgradeCost = parseInt(localStorage.getItem(username + "_upgradeCost")) || 50;
 let ultraUpgradeCost = 1000;
 
 //Functies aanmaken voor knoppen.
