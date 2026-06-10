@@ -59,8 +59,11 @@ function buyUpgrade() {
         upgradeCost = Math.ceil(upgradeCost * 1.15);
         document.getElementById("coinCount").textContent =
             "Coins: " + currentCoins;
-        document.getElementById("upgradeButton").textContent = 
-            "Upgrade (Cost: " + upgradeCost + " coins)";
+        let upgradeButton = document.getElementById("upgradeButton");
+        if (upgradeButton) {
+            upgradeButton.textContent = 
+                "Upgrade (Cost: " + upgradeCost + " coins)";
+        }
         saveGame();
     }
 }
