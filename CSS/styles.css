@@ -131,6 +131,12 @@ img {
     font-size: 11px;
 }
 
+.gameFooter {
+    margin-top: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
 /*Responsive designs voor andere apparaten.*/
 
 /*mobiel*/
