@@ -4,14 +4,14 @@
 // Variabelen aanmaken voor de game.
 
 let username = localStorage.getItem("username") || "Guest";
-let isSnert = localStorage.getItem("snertMode") === "true";
+let isSnert = username === "SNERT" || localStorage.getItem("snertMode") === "true";
 let currentCoins = parseInt(localStorage.getItem(username + "_coins")) || 0;
 let coinsPerClick = parseInt(localStorage.getItem(username + "_coinsPerClick")) || 1;
 let upgradeCost = parseInt(localStorage.getItem(username + "_upgradeCost")) || 50;
 let ultraUpgradeCost = 1000;
 
 //Secret Snert Mode activeren als de username "SNERT" is.
-if (isSnert) {
+if (username === "SNERT") {
     currentCoins += 100;
     coinsPerClick *= 2;
     upgradeCost = Math.floor(upgradeCost * 0.5);
