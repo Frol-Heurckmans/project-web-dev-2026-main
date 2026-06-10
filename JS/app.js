@@ -4,6 +4,13 @@
 // Variabelen aanmaken voor de game.
 
 let username = localStorage.getItem("username") || "Guest";
+let isSnert = localStorage.getItem("snertMode") === "true";
+
+if (isSnert) {
+    currentCoins += 100;
+    coinsPerClick *= 2;
+    upgradeCost = Math.floor(upgradeCost * 0.5);
+}
 let currentCoins = parseInt(localStorage.getItem(username + "_coins")) || 0;
 let coinsPerClick = parseInt(localStorage.getItem(username + "_coinsPerClick")) || 1;
 let upgradeCost = parseInt(localStorage.getItem(username + "_upgradeCost")) || 50;
@@ -17,6 +24,11 @@ function goToGame() {
     let inputName = document.getElementById("username").value.trim();
     if (inputName === "") {
         inputName = "Guest";
+    }
+    if (inputName === "SNERT") {
+        localStorage.setItem("snertMode", "true");
+    } else {
+        localStorage.setItem("snertMode", "false");
     }
 
     localStorage.setItem("username", inputName);
