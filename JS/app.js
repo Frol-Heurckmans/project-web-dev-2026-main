@@ -48,6 +48,10 @@ function buyUpgrade() {
     }
 }
 
-document.getElementById("upgradeButton").textContent = "Upgrade (Cost: " + upgradeCost + " coins)";
+let upgradeButton = document.getElementById("upgradeButton");
 
+if (upgradeButton) {
+    upgradeButton.textContent = 
+        "Upgrade (Cost: " + upgradeCost + " coins)";
+}
 document.getElementById("playerInfo").textContent = "Playing as: " + username;
