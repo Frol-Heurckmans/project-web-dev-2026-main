@@ -34,9 +34,16 @@ img {
     width: 25%;
 }
 
+.gameHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logoContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
