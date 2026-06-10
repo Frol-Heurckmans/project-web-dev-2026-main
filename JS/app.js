@@ -9,6 +9,8 @@ let coinsPerClick = parseInt(localStorage.getItem(username + "_coinsPerClick")) 
 let upgradeCost = parseInt(localStorage.getItem(username + "_upgradeCost")) || 50;
 let ultraUpgradeCost = 1000;
 
+document.getElementById("coinCount").textContent = "Coins: " + currentCoins;
+
 //Functies aanmaken voor knoppen.
 
 function goToGame() {
