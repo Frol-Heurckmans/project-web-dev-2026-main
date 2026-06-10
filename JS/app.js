@@ -83,3 +83,17 @@ function saveGame() {
     localStorage.setItem(username + "_coinsPerClick", coinsPerClick);
     localStorage.setItem(username + "_upgradeCost", upgradeCost);
 }
+
+function buyUltraUpgrade() {
+    if (currentCoins >= ultraUpgradeCost) {
+        currentCoins -= ultraUpgradeCost;
+        coinsPerClick += 25;
+        coinsPerClick = Math.floor(coinsPerClick *1.25);
+        ultraUpgradeCost = Math.ceil(ultraUpgradeCost * 2);
+        document.getElementById("coinCount").textContent = 
+            "Coins: " + currentCoins;
+        document.getElementById("ultraUpgradeButton").textContent = 
+            "Ultra Upgrade (Cost: " + ultraUpgradeCost + " coins)";
+        saveGame()
+    }
+}
