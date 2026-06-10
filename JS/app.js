@@ -4,6 +4,7 @@
 
 let coinsPerClick = 1;
 let upgradeCost = 50;
+let ultraUpgradeCost = 1000;
 
 function goToGame() {
     let username = document.getElementById("username").value.trim();
