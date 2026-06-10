@@ -6,7 +6,6 @@
 let currentCoins = 0;
 let coinsPerClick = 1;
 let upgradeCost = 50;
-let username = localStorage.getItem("username");
 let ultraUpgradeCost = 1000;
 
 //Functies aanmaken voor knoppen.
