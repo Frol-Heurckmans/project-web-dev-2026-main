@@ -45,6 +45,10 @@ function GoBack() {
     window.location.href = "../index.html";
 }
 
+function GoBackError() {
+    window.location.href = "index.html";
+}
+
 function clickButton() {
    currentCoins += coinsPerClick;
    document.getElementById("coinCount").textContent = 
