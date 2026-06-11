@@ -162,6 +162,11 @@ img {
     text-align: center;
 }
 
+#username {
+    background-color: #f1c40f;
+    color: black;
+}
+
 /*Responsive designs voor andere apparaten.*/
 
 /*mobiel*/
