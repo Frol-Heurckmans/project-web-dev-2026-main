@@ -77,7 +77,7 @@ img {
 
 .backContainer {
     position: fixed;
-    bottom: 100px;
+    margin-top: 50px;
     left: 50%;
     transform: translateX(-50%);
 }
