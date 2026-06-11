@@ -149,6 +149,7 @@ img {
 .gameFooter table {
     margin-top: 100px;
     border-collapse: collapse;
+    background-color: white;
 }
 
 .gameFooter th, .gameFooter td {
