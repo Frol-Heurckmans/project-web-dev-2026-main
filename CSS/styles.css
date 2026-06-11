@@ -131,7 +131,7 @@ img {
     margin-top: 30px;
 }
 
-.upgradeButton, .ultraUpgradeButton {
+#upgradeButton, #ultraUpgradeButton {
     width: 100px;
     height: 50px;
     font-size: 11px;
