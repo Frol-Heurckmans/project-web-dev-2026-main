@@ -8,7 +8,7 @@ let isSnert = username === "SNERT" || localStorage.getItem("snertMode") === "tru
 let currentCoins = parseInt(localStorage.getItem(username + "_coins")) || 0;
 let coinsPerClick = parseInt(localStorage.getItem(username + "_coinsPerClick")) || 1;
 let upgradeCost = parseInt(localStorage.getItem(username + "_upgradeCost")) || 50;
-let ultraUpgradeCost = 1000;
+let ultraUpgradeCost = parseInt(localStorage.getItem(username + "_ultraUpgradeCost")) || 1000;
 
 //Secret Snert Mode activeren als de username "SNERT" is.
 if (username === "SNERT") {
