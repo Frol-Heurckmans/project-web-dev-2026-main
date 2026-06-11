@@ -100,3 +100,6 @@ function buyUltraUpgrade() {
         saveGame()
     }
 }
+
+document.getElementById("clickPower").textContent =
+    "Coins per click: " + coinsPerClick;

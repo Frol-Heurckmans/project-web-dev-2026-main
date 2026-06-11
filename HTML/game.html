@@ -21,6 +21,7 @@
         <!--Alle knoppen en hun containers-->
         <div class="theButtonContainer">
             <p id="coinCount">Coins: 0</p>
+            <p id="clickPower">Coins per click: 1</p>
             <button class="clickButton" onclick="clickButton()">Click me!</button>
         </div>
 
@@ -32,7 +33,16 @@
         <div class="backContainer">
             <button class="backButton" onclick="GoBack()">Back</button>
         </div>
+
         <h3>How fun is this game?</h3>
+<       <select id="gameRating">
+            <option value="">Choose a rating...</option>
+            <option value="1">Very boring</option>
+            <option value="2">Pretty fun</option>
+            <option value="3">Very fun</option>
+            <option value="4">ETERNAL FLAME MASTERPIECE🔥</option>
+        </select>
+
         <footer class="gameFooter">
             
         </footer>
