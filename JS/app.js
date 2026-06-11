@@ -91,7 +91,6 @@ function saveGame() {
 function buyUltraUpgrade() {
     if (currentCoins >= ultraUpgradeCost) {
         currentCoins -= ultraUpgradeCost;
-        coinsPerClick += 25;
         coinsPerClick = Math.floor(coinsPerClick * 1.25);
         ultraUpgradeCost = Math.ceil(ultraUpgradeCost * 2);
         document.getElementById("coinCount").textContent =
@@ -100,6 +99,11 @@ function buyUltraUpgrade() {
         if (ultraBtn) {
             ultraBtn.textContent =
                 "Ultra Upgrade (Cost: " + ultraUpgradeCost + " coins)";
+        }
+        let clickPower = document.getElementById("clickPower");
+        if (clickPower) {
+            clickPower.textContent =
+                "Coins per click: " + coinsPerClick;
         }
         saveGame();
     }
