@@ -85,6 +85,7 @@ function saveGame() {
     localStorage.setItem(username + "_coins", currentCoins);
     localStorage.setItem(username + "_coinsPerClick", coinsPerClick);
     localStorage.setItem(username + "_upgradeCost", upgradeCost);
+    localStorage.setItem(username + "_ultraUpgradeCost", ultraUpgradeCost);
 }
 
 function buyUltraUpgrade() {
