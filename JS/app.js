@@ -96,11 +96,18 @@ function buyUltraUpgrade() {
         ultraUpgradeCost = Math.ceil(ultraUpgradeCost * 2);
         document.getElementById("coinCount").textContent =
             "Coins: " + currentCoins;
-        document.getElementById("ultraUpgradeButton").textContent =
-            "Ultra Upgrade (Cost: " + ultraUpgradeCost + " coins)";
+        let ultraBtn = document.getElementById("ultraUpgradeButton");
+        if (ultraBtn) {
+            ultraBtn.textContent =
+                "Ultra Upgrade (Cost: " + ultraUpgradeCost + " coins)";
+        }
         saveGame();
     }
 }
 
-document.getElementById("clickPower").textContent =
-    "Coins per click: " + coinsPerClick;
+let clickPower = document.getElementById("clickPower");
+
+if (clickPower) {
+    clickPower.textContent =
+        "Coins per click: " + coinsPerClick;
+}
