@@ -76,10 +76,9 @@ img {
 }
 
 .backContainer {
-    position: fixed;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .backButton {
