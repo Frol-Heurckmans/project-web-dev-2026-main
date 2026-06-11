@@ -120,3 +120,10 @@ if (clickPower) {
     clickPower.textContent =
         "Coins per click: " + coinsPerClick;
 }
+
+let ultraBtn = document.getElementById("ultraUpgradeButton");
+
+if (ultraBtn) {
+    ultraBtn.textContent =
+        "Ultra Upgrade (Cost: " + ultraUpgradeCost + " coins)";
+}
