@@ -148,6 +148,12 @@ img {
     padding: 8px 12px;
 }
 
+#gameRating {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
 /*Responsive designs voor andere apparaten.*/
 
 /*mobiel*/
